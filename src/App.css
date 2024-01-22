@@ -1,17 +1,15 @@
-.App {
+/* Add to your App.css or create a new CSS file */
+
+.screenshot-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.screenshot-container img {
+  max-width: 100%;
+  max-height: 80vh; /* Adjust the max height as needed */
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
