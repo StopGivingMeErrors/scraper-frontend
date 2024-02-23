@@ -146,8 +146,8 @@ function App() {
             {includeScreenshot && result.screenshotPath && (
             <>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <img src={`https://scraper-henna.vercel.app${result.screenshotPath}`} alt="Scraped Data" />
-              <a href={`https://scraper-henna.vercel.app${result.screenshotPath}`} download="screenshot.jpg">
+            <img src={`https://scraper-henna.vercel.app/${result.screenshotPath}`} alt="Scraped Data" />
+              <a href={`https://scraper-henna.vercel.app/${result.screenshotPath}`} download="screenshot.jpg">
               <button onClick={handleDownloadImage}>Download Image</button>
               </a>
             </div>
