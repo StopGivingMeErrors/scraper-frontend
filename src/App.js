@@ -10,12 +10,12 @@ function App() {
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
 
+  const BASE_URL = 'https://scraper-nenvswbdh-stopgivingmeerrors.vercel.app';
 
   const handleDownloadImage = async () => {
     try {
       if (result && result.screenshotPath) {
-        const response = await fetch(`https://scraper-chefk0n6m-stopgivingmeerrors.vercel.app${result.screenshotPath}`);
-
+        const response = await fetch(`${BASE_URL}${result.screenshotPath}`);
         const blob = await response.blob();
         const url = window.URL.createObjectURL(blob);
         const link = document.createElement('a');
@@ -44,8 +44,7 @@ function App() {
     try {
       setLoading(true);
   
-      let requestUrl = `https://scraper-henna.vercel.app/api/scrape?url=${encodeURIComponent(url)}`;
-
+      let requestUrl = `${BASE_URL}/api/scrape?url=${encodeURIComponent(url)}`;
   
       if (includeScreenshot) {
         requestUrl += '&screenshot=true';
@@ -146,8 +145,8 @@ function App() {
             {includeScreenshot && result.screenshotPath && (
             <>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <img src={`https://scraper-henna.vercel.app/${result.screenshotPath}`} alt="Scraped Data" />
-              <a href={`https://scraper-henna.vercel.app/${result.screenshotPath}`} download="screenshot.jpg">
+            <img src={`${BASE_URL}${result.screenshotPath}`} alt="Scraped Data" />
+            <a href={`${BASE_URL}${result.screenshotPath}`} download="screenshot.jpg">
               <button onClick={handleDownloadImage}>Download Image</button>
               </a>
             </div>
@@ -179,3 +178,4 @@ function App() {
 
 
 export default App;
+
