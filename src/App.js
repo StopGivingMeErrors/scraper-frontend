@@ -14,7 +14,7 @@ function App() {
   const handleDownloadImage = async () => {
     try {
       if (result && result.screenshotPath) {
-        const response = await fetch(`https://scraper-nu-ten.vercel.app${result.screenshotPath}`);
+        const response = await fetch(`https://scraper-chefk0n6m-stopgivingmeerrors.vercel.app${result.screenshotPath}`);
 
         const blob = await response.blob();
         const url = window.URL.createObjectURL(blob);
@@ -44,7 +44,7 @@ function App() {
     try {
       setLoading(true);
   
-      let requestUrl = `https://scraper-nu-ten.vercel.app/api/scrape?url=${encodeURIComponent(url)}`;
+      let requestUrl = `https://scraper-chefk0n6m-stopgivingmeerrors.vercel.app/api/scrape?url=${encodeURIComponent(url)}`;
   
       if (includeScreenshot) {
         requestUrl += '&screenshot=true';
