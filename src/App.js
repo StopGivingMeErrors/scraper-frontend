@@ -145,8 +145,8 @@ function App() {
             {includeScreenshot && result.screenshotPath && (
             <>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <img src={`http://localhost:3001${result.screenshotPath}`} alt="Scraped Data" />
-              <a href={`http://localhost:3001${result.screenshotPath}`} download="screenshot.jpg">
+              <img src={`https://scraper-chefk0n6m-stopgivingmeerrors.vercel.app${result.screenshotPath}`} alt="Scraped Data" />
+              <a href={`https://scraper-chefk0n6m-stopgivingmeerrors.vercel.app${result.screenshotPath}`} download="screenshot.jpg">
               <button onClick={handleDownloadImage}>Download Image</button>
               </a>
             </div>
