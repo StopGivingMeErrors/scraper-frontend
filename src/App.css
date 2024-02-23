@@ -1,36 +1,208 @@
-/* Add to your App.css or create a new CSS file */
 
-.screenshot-container {
-  text-align: center;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url("https://wallpapercave.com/wp/wp7109751.jpg");
+  background-size: cover;
 }
 
-.screenshot-container img {
-  max-width: 100%;
-  max-height: 80vh; /* Adjust the max height as needed */
-  margin-top: 10px;
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
-.App-link {
-  color: #61dafb;
+
+.header {
+  /* background-color: rgba(245, 245, 245, 0.8); 
+  backdrop-filter: blur(5px); */
+  color: #fff;
+  padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+} */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.hero-section {
+  text-align: center;
+  padding: 2rem;
+  width: 48%;
+  /* height: 40%; */
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  transition: border-color 0.3s ease; 
+}
+
+.hero-section:hover {
+  border-color: rgba(255, 255, 255, 0.5); /* Neon white border color on hover */
+}
+
+/* input[type="checkbox"] {
+  margin: 0;
+} */
+
+.hero-section h1 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+button {
+  background-color: #232323;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Features Section Styles */
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.feature {
+  width: 600px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+ 
+}
+
+.feature img {
+  width: 386px;
+ height: 222px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.loading-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc; /* Background color of the loading bar */
+}
+
+.loading-progress {
+  height: 100%;
+  background-color: #AEF7F7; /* Color of the loading progress */
+  animation: loadingAnimation 2s linear infinite; /* Animation for the loading progress */
+}
+
+@keyframes loadingAnimation {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+
+
+
+.cta-section {
+  background-color: #232323;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #232323;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+
+
+/* input[type="checkbox"] {
+  width: 21px; 
+  height: 13px; 
+ 
+} */
+
+
+/* footer {
+  background-color: rgba(245, 245, 245, 0.8); 
+  backdrop-filter: blur(5px);
+  border-radius: 10px; 
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} */
+
+
+
+.scraped-html-container {
+  margin: 20px;
+  padding: 20px;
+ 
+  /* background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.1);  */
+}
+
+.scraped-html-container>h2{
+  color: #eeee;
+}
+
+.scraped-html-textarea {
+  width: 70%;
+  height: 200px;
+  padding: 10px;
+  margin-left: 2%;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  resize: none;
+  font-family: Arial, sans-serif;
 }
