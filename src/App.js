@@ -10,7 +10,7 @@ function App() {
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const BASE_URL = 'https://scraper-nenvswbdh-stopgivingmeerrors.vercel.app';
+  const BASE_URL = 'https://scraper-nu-beige.vercel.app/';
 
   const handleDownloadImage = async () => {
     try {
