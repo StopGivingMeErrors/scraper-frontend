@@ -10,7 +10,7 @@ function App() {
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const BASE_URL = 'https://scrapify-d6f1dd6e9ccb.herokuapp.com/'; 
+  const BASE_URL = 'https://scrapify-d6f1dd6e9ccb.herokuapp.com'; 
 
   const handleDownloadImage = async () => {
     try {
