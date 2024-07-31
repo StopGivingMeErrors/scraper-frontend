@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import copy from 'clipboard';
+
 
 function App() {
   const [result, setResult] = useState('');
@@ -10,7 +10,7 @@ function App() {
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const BASE_URL = 'https://scraper-nu-beige.vercel.app/';
+  const BASE_URL = 'https://scrapify-d6f1dd6e9ccb.herokuapp.com/'; 
 
   const handleDownloadImage = async () => {
     try {
